@@ -2,11 +2,6 @@ doc/
 doc/_build
 doc/genearted
 doc/modules/generated
-translate/Makefile
-translate/_build/
-translate/conf.py
-translate/index.rst.rst
-translate/make.bat
 
 #pyc
 *.py[cod]
