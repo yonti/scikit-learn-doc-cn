@@ -53,6 +53,11 @@ Bagging方法有很多种，但不同的地方主要在于
   * 最后，当基分类器是根据特征和样本构建的随机子集，
     该方法称为Random Patches [LG2012]_。
 
+在scikit-learn中，bagging方法统一由:class:`BaggingClassifier`元分类器提供
+(resp. :class:`BaggingRegressor`)，将用户指定的分类器策略连同参数一起来选择随机子集。
+特别是``max_samples``和``max_features``决定了子集的大小（就样本数量和特征数量而言）。
+并且
+               
 In scikit-learn, bagging methods are offered as a unified
 :class:`BaggingClassifier` meta-estimator  (resp. :class:`BaggingRegressor`),
 taking as input a user-specified base estimator along with parameters
